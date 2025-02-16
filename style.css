@@ -1,3 +1,15 @@
 body {
     background-color: rgb(238, 201, 210);
+    text-align: center;
 }
+
+h1 {
+    font-family: monospace;
+    font-size: 45px;
+    color: rgb(59, 12, 12);
+}
+
+footer {
+    font-family: monospace;
+    color: rgb(170, 141, 141);
+}   
