@@ -7,28 +7,31 @@
     <title> AI Poem Generator </title>
 </head>
 <body>
+    <div clas="container">
     <header>
     <h1> AI Poem Generator </h1>
 </header>
 
-<main>
 <form> 
-<input type="text" placeholder="Enter a topic for the poem"
+<input type="text" placeholder="Please enter a topic for the poem..."
 autofocus
 required
 autocomplete="off"
+class="instructions"
 />
-<input type="submit" />
-<div>
+<input type="submit" class="submit-button" />
+</form>
+
+<div class="poem">
     The poem will go here
 </div>
-</form>
-</main>
 
     <footer> This project was coded with love by Orkide. <br/>
     You can find it open-sourced on <a href="https://github.com/orkid-e/poem-generator" target="_blank"> Github</a>
     and hosted on <a href="https://thriving-seahorse-cadae2.netlify.app/" target="_blank">Netlify </a>
     </footer>
+</div>
+
     <script src="script.js"></script>
 </body>
 </html>
