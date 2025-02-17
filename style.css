@@ -39,12 +39,12 @@ form {
     padding: 15px;
     border: 1px solid rgb(243, 224, 228);
     border-radius: 35px;
-    background-color: rgb(240, 214, 220);
-    color: grey;
+    background-color: rgb(104, 64, 74);
+    color: rgb(243, 224, 228);
     font-family: monospace;
     font-size: 15px;
     width: 18%;
-    box-shadow: 3px 3px rgba(100, 50, 69, 0.08);
+    box-shadow: 4px 4px rgba(100, 50, 69, 0.08);
 }
 
 .poem {
@@ -59,10 +59,11 @@ form {
     margin-bottom: 40px;
     margin-top: 40px;
     line-height: 24px;
-
-
 }
 
+poem {
+    color: rgb(104, 64, 74);
+}
 footer {
     font-family: monospace;
     font-size: 13px;
