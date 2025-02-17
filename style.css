@@ -64,6 +64,10 @@ form {
 poem {
     color: rgb(104, 64, 74);
 }
+
+.poem em {
+    color: rgb(170, 141, 141);
+}
 footer {
     font-family: monospace;
     font-size: 13px;
