@@ -13,19 +13,19 @@
     <header>
     <h1> AI Poem Generator </h1>
 </header>
-
 <form id="poem-generator-form"> 
-<input type="text" placeholder="Please enter a topic for the poem..."
+<input type="text" placeholder="Enter a topic for the poem...";
 autofocus
 required
 autocomplete="off"
 class="instructions"
+id="user-instructions"
 />
 <input type="submit" class="submit-button" />
 </form>
+<small class="hint"> i.e. Love, Happiness, Summer. </small>
 
-<div class="poem" id="poem">
-</div>
+<div class="poem hidden loader id="poem"> </div>
 
     <footer> This project was coded with love by Orkide. <br/>
     You can find it open-sourced on <a href="https://github.com/orkid-e/poem-generator" target="_blank"> Github</a>

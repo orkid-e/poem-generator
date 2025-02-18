@@ -31,7 +31,7 @@ form {
     font-size: 15px;
     line-height: 1.2;
     box-shadow: 3px 3px rgba(100, 50, 69, 0.08);
-    
+    outline: none;
 }
 
 .submit-button {
@@ -47,6 +47,22 @@ form {
     box-shadow: 4px 4px rgba(100, 50, 69, 0.08);
 }
 
+.submit-button:hover {
+    cursor: pointer;
+    transition: 350ms ease-in-out;
+    background: rgb(240, 214, 220);
+    color: rgb(104, 64, 74);
+}
+
+.hint {
+    position: relative;
+    top: -25px;
+    right: 125px;
+    color: rgba(39, 7, 19, 0.288);;
+    font-family: monospace;
+    font-size: 12px;
+ }
+
 .poem {
     border: 1px solid rgb(243, 224, 228);
     border-radius: 35px;
@@ -60,9 +76,43 @@ form {
     margin-top: 40px;
     line-height: 24px;
 }
+ 
+.loader {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: block;
+    margin:15px auto;
+    position: relative;
+    color: rgb(170, 141, 141);
+    box-sizing: border-box;
+    animation: animloader 2s linear infinite;
+  }
+  
+  @keyframes animloader {
+    0% {
+      box-shadow: 14px 0 0 -2px,  38px 0 0 -2px,  -14px 0 0 -2px,  -38px 0 0 -2px;
+    }
+    25% {
+      box-shadow: 14px 0 0 -2px,  38px 0 0 -2px,  -14px 0 0 -2px,  -38px 0 0 2px;
+    }
+    50% {
+      box-shadow: 14px 0 0 -2px,  38px 0 0 -2px,  -14px 0 0 2px,  -38px 0 0 -2px;
+    }
+    75% {
+      box-shadow: 14px 0 0 2px,  38px 0 0 -2px,  -14px 0 0 -2px,  -38px 0 0 -2px;
+    }
+    100% {
+      box-shadow: 14px 0 0 -2px,  38px 0 0 2px,  -14px 0 0 -2px,  -38px 0 0 -2px;
+    }
+  }
 
 poem {
     color: rgb(104, 64, 74);
+}
+
+.hidden {
+display: none;
 }
 
 .poem em {
@@ -78,3 +128,5 @@ footer {
  a {
     color: rgb(104, 64, 74);
  }
+
+ 
